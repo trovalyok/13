@@ -4,6 +4,9 @@ import pandas as pd
 
 # Alphabet files with random numbers and summary
 
+file = open('13.1/summary.txt', mode='w')
+file.close()
+
 for i in range(65, 91, 1):
     with open(f'13.1/{chr(i)}.txt', mode='w') as file:
         number = random.randint(1, 100)
